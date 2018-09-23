@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Volleyball Score Keeper</string>
+    <string name="teamA">Team A</string>
+    <string name="teamB">Team B</string>
+    <string name="set_count">Set Count</string>
+    <string name="score">Score</string>
+    <string name="point_button">+1 Point</string>
+    <string name="foul_button">+1 Foul</string>
+    <string name="reset_button">Reset</string>
+</resources>
