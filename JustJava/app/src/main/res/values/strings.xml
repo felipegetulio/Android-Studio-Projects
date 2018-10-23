@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Just Java</string>
+    <string name="checkbox_whipped_cream">Whipped cream</string>
+    <string name="checkbox_chocolate">Chocolate</string>
+    <string name="name_hint">Put your name here...</string>
+    <string name="minus">-</string>
+    <string name="plus">+</string>
+    <string name="warning_more_than_100">You can\'t order more than 100 cups!</string>
+    <string name="warning_less_than_1">You can\'t order less than 1 cup!</string>
 </resources>
