@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources  xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" >
+    <string name="whipped_cream">Chantili</string>
+    <string name="chocolate">Chocolate</string>
+    <string name="name_hint">Digite o seu nome aqui...</string>
+    <string name="warning_more_than_100">Você não pode fazer mais que 100 pedidos!</string>
+    <string name="warning_less_than_1">Você não pode fazer menos que 1 pedido!</string>
+    <string name="toppings">Coberturas</string>
+    <string name="order">Fazer o pedido</string>
+    <string name="order_summary">Resumo do Pedido</string>
+    <string name="thank_you">Obrigado</string>
+    <string name="answer_yes">Sim</string>
+    <string name="answer_no">Não</string>
+    <string name="quantity">Quantidade</string>
+    <string name="total">Total</string>
+    <string name="coffee_order">Pedido de Café</string>
+    <string name="order_summary_name">"Nome: <xliff:g id="name" example="Amy">%s</xliff:g> "</string>
+</resources>

@@ -9,6 +9,7 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+import java.util.HashMap;
 
 /**
  * This app displays an order form to order coffee.
@@ -17,21 +18,31 @@ public class MainActivity extends AppCompatActivity {
 
     int quantity = 2;
     Toast currentToast;
+    HashMap<Boolean, String> answer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        initialize();
+    }
+
+    private void initialize(){
         currentToast = Toast.makeText(getApplicationContext(), "", Toast.LENGTH_SHORT);
+        answer = new HashMap<>();
+        answer.put(false, getString(R.string.answer_no));
+        answer.put(true, getString(R.string.answer_yes));
     }
 
     private String createOrderSummary(String name, boolean hasWhippedCream, boolean hasChocolate){
-        String summary = "Order Summary\n\nName: " + name + "\n";
-        summary += "Add whipped cream? " + (hasWhippedCream? "Yes":"No") + "\n";
-        summary += "Add chocolate? " + (hasChocolate? "Yes":"No") + "\n";
-        summary += "Quantity: " + quantity + "\n";
-        summary += "Total: R$" + calculatePrice(hasWhippedCream, hasChocolate) + "\n";
-        summary += "Thank you!\n";
+        String summary = getString(R.string.order_summary) + "\n\n";
+        summary += getString(R.string.order_summary_name, name);
+        summary += getString(R.string.whipped_cream) + "? " + answer.get(hasWhippedCream) + "\n";
+        summary += getString(R.string.chocolate) + "? " + answer.get(hasChocolate) + "\n";
+        summary += getString(R.string.quantity) + ": " + quantity + "\n";
+        summary += getString(R.string.total) + ": R$" + calculatePrice(hasWhippedCream, hasChocolate) + "\n";
+        summary += getString(R.string.thank_you) + "!\n";
+
         return summary;
     }
 
@@ -54,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
         CheckBox chocolate = findViewById(R.id.checkbox_chocolate);
         EditText name = findViewById(R.id.name_text_input);
         String message = createOrderSummary(name.getText().toString() , whippedCream.isChecked(), chocolate.isChecked());
-        createEmailIntent("Coffee Order", message);
+        createEmailIntent(getString(R.string.coffee_order), message);
     }
 
     private void showToast(String message){
@@ -100,7 +111,7 @@ public class MainActivity extends AppCompatActivity {
      * This method displays the given quantity value on the screen.
      */
     private void display(int number) {
-        TextView quantityTextView = (TextView) findViewById(R.id.quantity_text_view);
+        TextView quantityTextView = findViewById(R.id.quantity_text_view);
         quantityTextView.setText(String.valueOf(number));
     }
 }
