@@ -36,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
 
     private String createOrderSummary(String name, boolean hasWhippedCream, boolean hasChocolate){
         String summary = getString(R.string.order_summary) + "\n\n";
+        getString(R.string.order_summary_name, "tudo");
         summary += getString(R.string.order_summary_name, name);
         summary += getString(R.string.whipped_cream) + "? " + answer.get(hasWhippedCream) + "\n";
         summary += getString(R.string.chocolate) + "? " + answer.get(hasChocolate) + "\n";

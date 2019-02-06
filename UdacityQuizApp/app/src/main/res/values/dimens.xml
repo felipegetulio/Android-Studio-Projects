@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="checkbox_paddingStart">24dp</dimen>
+    <dimen name="checkbox_paddingEnd">10dp</dimen>
+
+</resources>

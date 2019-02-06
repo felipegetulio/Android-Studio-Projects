@@ -1,0 +1,73 @@
+<resources>
+    <string name="app_name">QuizApp</string>
+
+    <string name="question_statement_1">1. What is Solar System heaviest planet?</string>
+    <string name="question_statement_2">2. The moon does not shine, but it has no light of its own like the sun. So why does the moon shine?</string>
+    <string name="question_statement_3">3. Which figure in Greek mythology is associated with the name of the planet Jupiter?</string>
+    <string name="question_statement_4">4. The options below contain a list of 5 planet names. Select the option that contains the names of the planets in ascending order of size (smallest to largest).</string>
+    <string name="question_statement_5">5. We know that planet Earth\'s diameter is 12,756km and our Moon\'s is 3,376km. How many times is Earth\'s diameter larger than the Moon? Type the answer with accuracy of 1 decimal place. </string>
+    <string name="question_statement_6">6. Imagine a square house in the extreme south of Brazil, with four outer walls, each with a window in its center. Each window faces each of the cardinal points (North, South, East and West). Is there a window by which sunlight never enters directly? If yes, which one or which ones?</string>
+    <string name="question_statement_7">7. What is the only star that is not fixed in any constellation?</string>
+    <string name="question_statement_8">8. Constellations are apparent clusters of stars which astronomers of ancient times imagined forming figures of people, animals or objects. The brightest star in each constellation is called alpha. What is alpha\'s name in Lyra constellation?</string>
+    <string name="question_statement_9">9. From the following options, choose the one that is NOT associated with galaxies.</string>
+    <string name="question_statement_10">10. Choose all the planets that have moons.</string>
+
+    <string name="quiz_title">Simple Astronomy Quiz</string>
+
+    <string name="text_a1">a) Earth</string>
+    <string name="text_b1">b) Saturn</string>
+    <string name="text_c1">c) Jupiter</string>
+    <string name="text_d1">d) Mercury</string>
+
+    <string name="text_a2">a) A lantern makes the moon shine</string>
+    <string name="text_b2">b) Because it reflects the light of the sun</string>
+    <string name="text_c2">c) The moon does not shine</string>
+    <string name="text_d2">d) The planets make the moon shine</string>
+
+    <string name="text_a3">a) Kronos - Father of Zeus - god of Time (slow movement in the sky)</string>
+    <string name="text_b3">b) Posseidon - god of the seas</string>
+    <string name="text_c3">c) Ouranos - God of Heaven</string>
+    <string name="text_d3">d) Zeus - Father of the gods</string>
+
+    <string name="text_a4">a) Mercury, Mars, Earth, Uranus and Jupiter</string>
+    <string name="text_b4">b) Mars, Mercury, Earth and Jupiter</string>
+    <string name="text_c4">c) Earth, Mercury, Mars, Uranus and Jupiter</string>
+    <string name="text_d4">d) Mercury, Mars, Uranus, Earth and Jupiter</string>
+
+    <string name="text_a6">a) Sunlight will never enter through the South window.</string>
+    <string name="text_b6">b) The sunlight only enters the East and West windows.</string>
+    <string name="text_c6">c) The sunlight enters through all the windows</string>
+    <string name="text_d6">d) The sun will never enter through the North window.</string>
+
+    <string name="text_a7">a) Rigel</string>
+    <string name="text_b7">b) Three Marys</string>
+    <string name="text_c7">c) Sun</string>
+    <string name="text_d7">d) Moon</string>
+
+    <string name="text_a8">a) Polaris</string>
+    <string name="text_b8">b) Antares</string>
+    <string name="text_c8">c) Sirius</string>
+    <string name="text_d8">d) Vega</string>
+
+    <string name="text_a9">a) The deviation to red caused by the speed of departure, reinforces the theory of the expanding universe.</string>
+    <string name="text_b9">b) The local group of these objects is part of a supercluster of 75 Mega-parsecs in diameter.</string>
+    <string name="text_c9">c) Sets of these objects are called constellations.</string>
+    <string name="text_d9">d) Andromeda, M33, NGC 205, Large Magellanic Cloud</string>
+    <string name="name_hint">Put your name here...</string>
+    <string name="answer5_hint">Type your answer here...</string>
+
+    <string name="show_score_message" formatted="true">Quiz Finished! Hello, %s,  your score is %d! </string>
+    <string name="maximum_score_message"> Congratulations, %s! You\'ve reached the maximum of 10 score!</string>
+    <string name="not_all_questions_answered"> Hey, there are some unanswered questions! Answer them before you hit this button.</string>
+    <string name="text_a10">Mercury</string>
+    <string name="text_b10">Venus</string>
+    <string name="text_c10">Earth</string>
+    <string name="text_d10">Mars</string>
+    <string name="text_e10">Jupiter</string>
+    <string name="text_f10">Saturn</string>
+    <string name="text_g10">Uranus</string>
+    <string name="text_h10">Neptune</string>
+    <string name="text_button_finish">Finish</string>
+    <string name="text_button_show_answers">Show answers</string>
+
+</resources>
