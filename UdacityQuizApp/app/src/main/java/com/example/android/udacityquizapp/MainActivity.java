@@ -12,6 +12,9 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+
 public class MainActivity extends AppCompatActivity {
 
     private static final int MAX_SCORE = 10;
@@ -23,13 +26,15 @@ public class MainActivity extends AppCompatActivity {
     Button finishButton;
     Button showAnswersButton;
     EditText question5EditText;
-    EditText nameEditText;
+    @BindView(R.id.name_text_input) EditText nameEditText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        ButterKnife.bind(this);
         initialize();
+
     }
 
     private void initialize() {
@@ -38,7 +43,6 @@ public class MainActivity extends AppCompatActivity {
         radioGroups = new SparseArray<>();
         question5EditText = findViewById(R.id.question_5_et);
         finishButton = findViewById(R.id.finish_button);
-        nameEditText = findViewById(R.id.name_text_input);
         showAnswersButton = findViewById(R.id.show_answer_button);
         currentToast = Toast.makeText(getApplicationContext(), "", Toast.LENGTH_SHORT);
         finishToast = Toast.makeText(getApplicationContext(), "", Toast.LENGTH_LONG);
